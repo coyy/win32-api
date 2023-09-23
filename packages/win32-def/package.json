@@ -50,7 +50,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/mocha": "^10.0.1",
-    "@waiting/shared-types": "^20.11.0",
+    "@waiting/shared-types": "^22.0.0",
     "rollup-plugin-dts": "^6.0.2"
   },
   "devDependencies": {
