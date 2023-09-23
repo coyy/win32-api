@@ -74,17 +74,19 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@types/mocha": "^10.0.1",
+    "rollup-plugin-dts": "^6.0.2",
     "win32-def": "^20.4.1"
   },
   "devDependencies": {
+    "@breush/ffi-napi": "^4.0.13",
+    "@breush/ref-napi": "^4.0.9",
     "@types/ffi-napi": "*",
     "@types/ref-napi": "^3.0.6",
     "@types/ref-struct-di": "^1.1.8",
     "@types/ref-union-di": "^1.0.5",
     "@waiting/shared-core": "^20.11.4",
     "cross-env": "7",
-    "@breush/ffi-napi": "^4.0.13",
-    "@breush/ref-napi": "^4.0.9",
     "ref-struct-di": "^1.1.1",
     "ref-union-di": "^1.0.1"
   },
