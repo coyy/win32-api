@@ -1,0 +1,45 @@
+{
+  "version": "20.4.1",
+  "packages": [
+    "packages/*"
+  ],
+  "ignore": [
+    "demo",
+    "@mw-components/demo"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        ".githooks",
+        ".scripts",
+        ".vscode",
+        "package-lock.json",
+        "packages/demo",
+        "packages/mw-demo"
+      ],
+      "verifyAccess": false
+    },
+    "bootstrap": {
+      "hoist": true,
+      "noCi": true,
+      "nohoist": [
+        "cross-env",
+        "egg"
+      ],
+      "npmClientArgs": [
+        "--no-audit"
+      ]
+    },
+    "version": {
+      "conventionalCommits": true,
+      "allowBranch": [
+        "main",
+        "release",
+        "fix"
+      ],
+      "registry": "https://registry.npmjs.org/"
+    }
+  },
+  "npmClient": "npm"
+}
